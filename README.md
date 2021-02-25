@@ -1,5 +1,5 @@
 # howlongtobeat_py_api
-REST Python Flask API using howlongtobeatpy library plus aditional scraping 
+Python Flask API using howlongtobeatpy library plus aditional scraping 
 
 ### Original sourse by ScrappyCoco
 ### howlongtobeatpy
