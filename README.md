@@ -11,12 +11,19 @@ It uses the game_web_link (https://howlongtobeat.com/game.php?id=XXXX) to extrac
 
 ## The aditional info
 -Game Description
+
 -Developer
+
 -Genres
+
 -Platforms
+
 -Publisher
+
 -Game Rating (acording to HowLongToBeat users)
+
 -Release dates
+
 -and Last update in the site
 
 ## Example '/search/minecrat'
