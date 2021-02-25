@@ -1,9 +1,10 @@
 # howlongtobeat_py_api
 REST Python Flask API using howlongtobeatpy library plus aditional scraping 
 
-## Original sourse by ScrappyCoco
+### Original sourse by ScrappyCoco
 ### howlongtobeatpy
 https://pypi.org/project/howlongtobeatpy/
+
 https://github.com/ScrappyCocco/HowLongToBeat-PythonAPI
 
 
