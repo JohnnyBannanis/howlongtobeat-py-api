@@ -1,5 +1,5 @@
 # howlongtobeat_py_api
-Python Flask API using howlongtobeatpy library plus aditional scraping 
+REST Python Flask API using howlongtobeatpy library plus aditional scraping 
 
 ### Original sourse by ScrappyCoco
 ### howlongtobeatpy
@@ -8,7 +8,7 @@ https://pypi.org/project/howlongtobeatpy/
 https://github.com/ScrappyCocco/HowLongToBeat-PythonAPI
 
 
-It uses the game_web_link (https://howlongtobeat.com/game.php?id=XXXX) to extract aditional information that howlongtobeatpy dont provide.
+It uses the game_id (https://howlongtobeat.com/game.php?id=XXXX) to extract aditional information that howlongtobeatpy dont provide.
 
 ## The aditional info
 -Game Description
@@ -27,12 +27,12 @@ It uses the game_web_link (https://howlongtobeat.com/game.php?id=XXXX) to extrac
 
 -and Last update in the site
 
-## Example '/search/minecrat'
+## Example '/game_info/6064'
 ```json
 {
     "description": "Minecraft is a game about placing blocks to buil anything you can imagine. At night monsters come out, make sure to build a shelter before that happens.",
     "game_id": "6064",
-    "game_image_url": "https://howlongtobeat.com/game   256px-Minecraft_1.1_Title.png",
+    "game_image_url": "https://howlongtobeat.com/game256px-Minecraft_1.1_Title.png",
     "game_name": "Minecraft",
     "game_web_link": "https://howlongtobeat.com/game.php?id=6064",
     "gameplay_completionist": "243",
