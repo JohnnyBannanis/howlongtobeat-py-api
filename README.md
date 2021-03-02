@@ -1,7 +1,18 @@
 # howlongtobeat_py_api
 REST Python Flask API using howlongtobeatpy library plus aditional scraping 
 
-### Original sourse by ScrappyCoco
+## Instalation/Use
+requires python 3.X and Flask (_pip install flask_). In the directory just run "app.py" (_python app.py_)
+
+Api Routes
+```
+/search                    =>     Default Search (first page games on HLTB)
+/search/"GAME_NAME"        =>     Results for search term
+/game_info/"HLTB_GAME_ID"  =>     Spacific game full info
+
+```
+
+### Original source by ScrappyCoco
 ### howlongtobeatpy
 https://pypi.org/project/howlongtobeatpy/
 
@@ -11,6 +22,7 @@ https://github.com/ScrappyCocco/HowLongToBeat-PythonAPI
 It uses the game_id (https://howlongtobeat.com/game.php?id=XXXX) to extract aditional information that howlongtobeatpy dont provide.
 
 ## The aditional info
+```
 -Game Description
 
 -Developer
@@ -26,7 +38,7 @@ It uses the game_id (https://howlongtobeat.com/game.php?id=XXXX) to extract adit
 -Release dates
 
 -and Last update in the site
-
+```
 ## Example '/game_info/6064'
 ```json
 {
