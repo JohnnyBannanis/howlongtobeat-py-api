@@ -13,7 +13,7 @@ def scraping(url):
     page = requests.get(url, headers=headers)
     soup = BeautifulSoup(page.content, "html.parser")
     # Description
-    description = soup.find_all('p')[0].text.replace("...Read More","")
+    description = soup.find('div', class_= "profile_info large").text.replace("...Read More","")
     description = description.strip()
     # Rating
     li_scrap = soup.find_all('li')
@@ -28,7 +28,10 @@ def scraping(url):
         data = i.text.replace("\t","").replace("\n", "")
         splited = data.split(":")
         info_key = splited[0]
-        info_value = splited[1].split(", ")
+        try:
+            info_value = splited[1].split(", ")
+        except:
+            info_value= ""
         if(len(info_value) == 1):
             info_value = info_value[0]
         infoField = [info_key , info_value]
